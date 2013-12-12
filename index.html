@@ -21,13 +21,20 @@
     $.getJSON( "https://api.github.com/repos/shapeoko/shapeokoblog/contents/", function( data ) {
       var items = [];
       $.each( data, function( key, val ) {
-        $("#posts").append("<li id='" + val.path + "'>" + val.name + ":" + val.url + "</li>" )
-        //items.push( "<li id='" + val.path + "'>" + val.name + ":" + val.url + "</li>" );
+
+        //grab the filename with extension
+        var file = val.name;
+        var extension = file.substr( (file.lastIndexOf('.') +1) );
+        
+        //only add to list if file is markdown
+        if(extension == "md"){
+          $("#posts").append("<li id='" + val.path + "'>" + val.name + ":" + val.url + "</li>" )
+        }
       });
     });
 
+    //bind click event to list
     $('#posts li').on('click', function() {
-        //console.log($(this).attr('id'));
         var clickedPost;
         clickedPost = $(this).attr('id');
         displayPost(clickedPost);
