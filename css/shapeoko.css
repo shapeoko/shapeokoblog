@@ -1,0 +1,346 @@
+	/* RESET CSS CODE FROM:
+	   http://meyerweb.com/eric/tools/css/reset/ 
+	   v2.0 | 20110126
+	   License: none (public domain)
+	*/
+
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}	
+
+
+	/* Site specific definitions */
+
+	* {
+	  padding: 0;
+	  margin: 0;
+	  box-sizing: border-box;
+	  color: inherit;
+	  text-rendering: optimizeLegibility;
+	}
+
+	body {
+	  color: #282b36;
+	  min-width: 768px;
+	  font-family: 'Ubuntu', sans-serif;
+	  background-color: #F8F8F8;
+	}
+
+
+	::-webkit-scrollbar {
+	    width: 12px;
+	}
+	 
+	::-webkit-scrollbar-track {
+	    border-radius: 0px;
+	    background-color:#ECF0F1;
+	}
+	 
+	::-webkit-scrollbar-thumb {
+	    border-radius: 1px;
+	    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.5);
+	    background-color:#7F8C8D;
+	    height:50px;
+	}
+
+	h1 {
+	  font-family: 'Ubuntu', sans-serif;
+	  font-size: 32px;
+	}
+
+	h2 {
+	  font-family: 'Ubuntu', sans-serif;
+	  font-weight: 600;
+	  font-size: 22px;
+	  line-height: 30px;
+	}
+
+	#mainHeader {
+	  font-size: 55px;
+	}
+
+	#introText {
+	  font-weight: 400;
+	  margin-top: 20px;
+	  font-size: 26px;
+	  line-height: 40px;
+	  margin-bottom: 40px;
+	}
+
+	#wrapper {
+	  margin: 0 auto;
+	  position: relative;
+	  min-width: 768px;
+	}
+
+	#wrapper nav {
+	  width: 15%;
+	  min-width: 200px;
+	  padding-right: 20px;
+	  position: fixed;
+	  height: 100%;
+	  overflow-y: scroll;
+	  top: 0;
+	  z-index: 1;
+	  padding: 40px 20px;
+	  font-family: 'Ubuntu', sans-serif;
+	  background-color: #ECF0F1;
+	  margin-top: 50px;
+	}
+
+	#wrapper nav dl {
+	  color: #767c8d;
+	}
+
+	#wrapper nav dl dt {
+	  list-style: none;
+	  margin-top: 10px;
+	  margin-bottom: 5px;
+	}
+
+	#wrapper nav dl dt a {
+	  display: block;
+	  padding: 2px 0;
+	  border-bottom: 1px solid rgba(118, 124, 141, 0.2);
+	  text-decoration: none;
+	}
+
+	#wrapper nav dl dd {
+	  margin-bottom: 5px;
+	  padding-left: 5px;
+	}
+
+	#wrapper nav dl dd:before {
+	  content: "- ";
+	}
+
+	#wrapper nav dl dd a {
+	  text-decoration: none;
+	  font-size: 12px;
+	  border-bottom: 1px solid transparent;
+	}
+
+	#wrapper nav dl a {
+	  -webkit-transition: all 100ms ease-in-out;
+	  -moz-transition: all 100ms ease-in-out;
+	  -o-transition: all 100ms ease-in-out;
+	  -ms-transition: all 100ms ease-in-out;
+	  transition: all 100ms ease-in-out;
+	}
+
+	#wrapper nav dl a:hover {
+	  color: #C0392B;
+	  border-bottom-color: #C0392B;
+	  font-weight:bold;
+	}
+
+	#wrapper #contentWrapper {
+	  width: 80%;
+	  max-width: 1080px;
+	  margin-left: 20%;
+	  padding: 0px 40px;
+	  padding-top: 72px;
+	}
+
+	#wrapper #productWrapper {
+	  width: 80%;
+	  max-width: 1080px;
+	  margin-left: 10%;
+	  padding: 0px 40px;
+	  padding-top: 72px;
+	}
+
+	article {
+	  border-top: 1px solid #ebebeb;
+	  padding: 40px 0;
+	}
+
+	article h2 {
+	  margin-top: 20px;
+	}
+
+	ul {
+		margin-left: 40px;
+		font-family: 'Ubuntu', sans-serif;
+	}
+
+	p,
+	ul li {
+	  font-family: 'Ubuntu', sans-serif;
+	  line-height: 20px;
+	  font-size: 16px;
+	  margin-top: 5px;
+	  color: black;
+	}
+
+	ol {
+		margin-left: 40px;
+		font-family: 'Ubuntu', sans-serif;
+	}
+
+	ol li {
+	  font-family: 'Ubuntu', sans-serif;
+	  line-height: 20px;
+	  font-size: 16px;
+	  margin-top: 5px;
+	  color: black;		
+	}
+
+	p a,
+	ul li a {
+	  text-decoration: none;
+	}
+
+	pre {
+	  background-color: #333;
+	  color: orange;
+	  width: 35%;
+	  padding: 10px;
+	  border-radius: 5px;
+	  position: relative;
+	  -webkit-font-smoothing: antialiased;
+	  margin: 40px 0 20px 0;
+	}
+
+	pre code {
+	  display: block;
+	}
+
+	pre:before {
+	  content: attr(data-type);
+	  position: absolute;
+	  font-size: 12px;
+	  top: -30px;
+	  left: 0;
+	  font-family: 'Ubuntu', sans-serif;
+	  font-weight: 400;
+	  display: inline-block;
+	  padding: 2px 5px;
+	  border-radius: 5px;
+	  background-color: #ebebeb;
+	}
+
+
+	.header {
+	  background: #7F8C8D;
+	  padding: 15px 15px 15px 30px;
+	  zoom: 1;
+	  line-height: 20px;
+	  position: fixed;
+	  width:100%;
+	  z-index: 10;
+	  color: rgb(104, 104, 104);
+	}
+
+	.header:before,
+	.header:after {
+	  content: "";
+	  display: table;
+	}
+
+	.header:after {
+	  clear: both;
+	}
+
+	.header .left {
+	  float: left;
+	  font-size: 35px;
+	  font-family: 'ubuntu', sans-serif;	  
+	}
+
+	.header .right {
+	  text-align: right;
+	  position: absolute;
+	  right: 15px;
+	  top: 12px;
+	}
+
+	.header h1,
+	.header h1 a,
+	.header h1 a:visited {
+	  color: white;
+	  text-decoration: none;
+	}
+
+	.header h1 a:hover {
+	  text-decoration: none;
+	  color: #C0392B;
+	}
+
+	.header li a {
+	  font-size: medium;
+	  color: white;
+	  display: block;
+	}
+
+	.header li a:hover {
+	  color: #C0392B;
+	}
+
+	.header ul li a {
+		text-decoration: none;
+	}
+
+.button{
+	background-color:#7F8C8D;
+	padding:5px 5px 5px 5px;
+	color: white;
+	cursor: pointer;
+	text-rendering: optimizeLegibility;
+}
+
+.button hover{
+	background-color:#95A5A6;
+}
+
+@media (min-width: 480px) /* Tablet & Desktop */ {
+  .header h1 {float: left;}
+  .header ul,
+  .header li {display: block;float: left;}
+  .header ul {margin-left: -15px;}
+  .header h1 + ul {border-left: solid 1px #dfe2e7;margin-left: 15px;}
+  .header li {border-left: solid 1px rgba(255,255,255,0.5);}
+  .header li:last-child {border-right: 0;}
+  .header li a {padding: 0 15px;}
+}
+

@@ -1,0 +1,53 @@
+#bomwrap{
+    padding-top: 75px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#bomleft{
+    width: 40%;
+    float: left;
+}
+
+#bomright{
+margin-left: 45%;
+margin-right:25px;
+width:50%;
+}
+
+#frame {
+    display: inline;
+    margin: 0 auto;
+    background: #ECF0F1;
+    border-radius: 0px;    
+}
+
+#controls{
+    padding-top:10px;
+}
+
+#controls a{
+    text-decoration: none;
+    width:50px;
+    background:#C0392B;
+    color: white;
+    margin-bottom:5px;
+    padding:5px;
+}
+
+#brinner{
+    width:50%;
+    position:fixed;
+}
+
+.sticky{
+position:fixed;
+width:50%;
+}
+
+.helper{
+    text-align: center;
+    font-weight: bold;
+}

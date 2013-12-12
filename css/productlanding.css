@@ -1,0 +1,28 @@
+.left-column{ float:left; width:30%; }
+
+.right-column{ float:right; width:30%; } 
+
+.center-column{ margin:auto; width:30%; }
+
+.ptitle{ font-size: 30px; font-weight: bold; line-height: 35px; margin-bottom:20px; color: #C0392B; }
+
+#buttonoptions { width: 295px; margin: auto; padding: 0px 20px 10px 25px; }
+
+.moreinfo { background-color: #3498DB; padding: 5px 5px 5px 5px; color: white; cursor: pointer; text-rendering: optimizeLegibility; float: left; width: 100%; }
+
+.buynow { margin-left: 15%; background-color:#2ECC71; padding:5px 5px 5px 5px; color: white; cursor: pointer; text-rendering: optimizeLegibility; }
+
+
+.discontinued{ margin-left: 15%; background-color:#F1C40F; padding:5px 5px 5px 5px; color: white; cursor: pointer; text-rendering: optimizeLegibility; }
+
+#stripe1{ width: 100%; background-color: #BDC3C7; padding:50px 10% 30px 10%; margin-bottom: -20px;  }
+
+#stripe2{ width: 100%; background-color: #7F8C8D; padding:20px 10% 50px 10%; margin-bottom: -20px; }
+
+.adjuster{ margin-top:-5px; } 
+
+.polaroid { position: relative; text-align: center; } 
+
+.polaroid img { border: 10px solid #fff; border-bottom: 45px solid #fff; width:250px; height:250px; } 
+
+.polaroid .headline{ position: absolute; width: 100%; bottom: 0px; font: bold 24px/1 'Ubuntu', sans-serif; color: black; margin-bottom: 22px; }
