@@ -12,6 +12,8 @@
 		I hope this is a compliment to the folks at chartjs.org as opposed to being "not cool"
 	-->
 		<title>Project Shapeoko</title>
+		    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+            <script src="markdown.js"></script>
 		<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
 		<link href="css/shapeoko.css" rel="stylesheet" />
 	</head>
@@ -34,12 +36,13 @@
 	
 	<div id="wrapper">
 		<nav>	
-			<dl>
+			<dl id="posts">
 			</dl>
 		</nav>
 		
 		<div id="contentWrapper">
-
+			<article id="post">
+			</article>
 		</div>
 	</div>
 
@@ -56,17 +59,20 @@
         
         //only add to list if file is markdown
         if(extension == "md"){
-          $("#posts").append("<li id='" + val.path + "'>" + val.name + ":" + val.url + "</li>" )
+          $("#posts").append("<dt id='" + val.path + "'>" + val.name + "</dt>" )
         }
       });
-    });
 
     //bind click event to list
-    $('#posts li').on('click', function() {
+    $('#posts dt').on('click', function() {
         var clickedPost;
         clickedPost = $(this).attr('id');
         displayPost(clickedPost);
     });
+
+    });
+
+
 
   });
 </script>
@@ -77,7 +83,7 @@
 <script>
             function displayPost(postPath){
               //clear the div before displaying blog post
-              $("#content").empty();
+              $("#post").empty();
 
 
                 $.ajax({
@@ -87,7 +93,7 @@
                   success: function(response){
                       
                       //here is the magic. convert markdown to html, inject it into content div
-                      $("#content").append(markdown.toHTML(response));
+                      $("#post").append(markdown.toHTML(response));
                     }
                 });
 
