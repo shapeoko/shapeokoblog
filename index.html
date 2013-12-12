@@ -41,7 +41,10 @@
 </script>
 <script>
             function displayPost(postPath){
-              //alert("displaying: " + postPath);
+              //clear the div before displaying blog post
+              $("#content").empty();
+
+
                 $.ajax({
                   //change this path to the appropriate markdown file
                   url:postPath,
